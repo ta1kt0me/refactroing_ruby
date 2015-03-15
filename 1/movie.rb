@@ -1,8 +1,4 @@
 class Movie
-  REGULAR = 0
-  NEW_RELEASE = 1
-  CHILDRENS = 2
-
   attr_reader :title, :price_code
   attr_writer :price
 
@@ -68,7 +64,6 @@ class NewReleasePrice
   def charge(days_rented)
     days_rented * 3
   end
-
 end
 
 class ChildrensPrice
